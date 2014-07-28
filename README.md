@@ -50,5 +50,5 @@ I prefer hand-ground French pressed coffee myself.  Tea is also fine.
 
 Ressources
 ==========
-http://plusbryan.com/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers
-http://practicalops.com/my-first-5-minutes-on-a-server.html
+* http://plusbryan.com/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers
+* http://practicalops.com/my-first-5-minutes-on-a-server.html
