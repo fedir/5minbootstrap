@@ -27,9 +27,9 @@ Enter the initial root password from your hosting provider, then run:
 
 ## Step 2: Fetch the bootstrap recipe
 
-[https://github.com/phred/5minbootstrap/](https://github.com/phred/5minbootstrap/)
+[https://github.com/fedir/5minbootstrap](https://github.com/fedir/5minbootstrap)
 
-    yourmachine ~$ git clone https://github.com/phred/5minbootstrap.git
+    yourmachine ~$ git clone https://github.com/fedir/5minbootstrap
 	yourmachine ~$ cd 5minbootstrap
 
 
@@ -46,26 +46,16 @@ Edit the `hosts.ini` that came with the repository.  Replace
 	127.0.0.1:2222
 	
 
-## Step 4: Update the SSH public key.
-
-    yourmachine ~/5minbootstrap$ cp ~/.ssh/id_dsa.pub ./fred.pub
-
-For simplicity I provided my public key in the repo.  Unless you want
-to grant me login access to your server, you probably want to change
-that. :-)
-
-
-## Step 5: Run the playbook
+## Step 4: Run the playbook
 
 This is the needed invocation *for Vagrant*:
 
     yourmachine ~/5minbootstrap$ ansible-playbook -i hosts.ini bootstrap.yml --ask-pass --sudo
 	
-If you are logging into a fresh Linode, or another sytem where you only have the `root` user, you need to run this command:
+If you are logging into a fresh Linux server where you only have the `root` user, you need to run this command:
 
     yourmachine ~/5minbootstrap$ ansible-playbook -i hosts.ini bootstrap.yml --user root --ask-pass
 	
 ## Step 6: Go get a cup of coffee because you're DONE.
 
 I prefer hand-ground French pressed coffee myself.  Tea is also fine.
-
