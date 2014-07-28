@@ -43,7 +43,7 @@ If you are logging into a fresh Linux server where you only have the `root` user
 
     yourmachine ~/5minbootstrap$ ansible-playbook -i hosts.ini bootstrap.yml --user root --ask-pass
 	
-## Step 6: Go get a cup of coffee because you're DONE.
+## Step 5: Go get a cup of coffee because you're DONE.
 
 I prefer hand-ground French pressed coffee myself.  Tea is also fine.
 
