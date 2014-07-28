@@ -12,6 +12,9 @@
 
   - name: Run apt-get upgrade
     action: command apt-get upgrade
+    
+  - name: Install sudo
+    action: command apt-get install sudo
 
   - name: Install fail2ban
     action: apt pkg=fail2ban state=installed
@@ -20,7 +23,7 @@
     action: user name=deploy password=$deploy_password
 
   - name: Add authorized deploy key for Fred
-    action: authorized_key user=deploy key='$FILE(fred.pub)'
+    action: authorized_key user=deploy key="{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
 
   - name: Remove sudo group rights
     action: lineinfile dest=/etc/sudoers regexp="^%sudo" state=absent
@@ -58,5 +61,5 @@
     action: lineinfile dest=/etc/cron.daily/00logwatch regexp="^/usr/sbin/logwatch" line="/usr/sbin/logwatch --output mail --mailto $logwatch_email --detail high" state=present create=yes
 
   handlers:
-  - name: Restart sshd
-    action: service name=sshd state=restarted
+  - name: Restart ssh
+    action: service name=ssh state=restarted
