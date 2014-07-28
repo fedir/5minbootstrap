@@ -1,4 +1,4 @@
-5minbootstrap
+Fork 5minbootstrap for Debian 7 compatibility
 =============
 
 Bootstrap and secure your server in 5 minutes flat.  A riff on this excellent post:
