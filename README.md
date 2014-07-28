@@ -1,18 +1,5 @@
-Fork 5minbootstrap for Debian 7 compatibility
+Fork 5minbootstrap ansible-driven for Debian 7 compatibility
 =============
-
-Bootstrap and secure your server in 5 minutes flat.  A riff on this excellent post:
-
-http://plusbryan.com/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers
-
-
-There's a blog post that I wrote to go along with this.  Check it out!
-
-http://practicalops.com/my-first-5-minutes-on-a-server.html
-
-
-TL;DR
-=====
 
 ## Step 1: Set the root password
 
@@ -59,3 +46,9 @@ If you are logging into a fresh Linux server where you only have the `root` user
 ## Step 6: Go get a cup of coffee because you're DONE.
 
 I prefer hand-ground French pressed coffee myself.  Tea is also fine.
+
+
+Ressources
+==========
+http://plusbryan.com/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers
+http://practicalops.com/my-first-5-minutes-on-a-server.html
